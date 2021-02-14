@@ -2,48 +2,6 @@
 
 /* font-face Cuprum*/
 
-@font-face {
-  font-family: Cuprum;
-  src: url(../fonts/cuprum.woff2) format("woff2"), url(../fonts/cuprum.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Cuprum;
-  src: url(../fonts/cuprumbold.woff2) format("woff2"), url(../fonts/cuprumbold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Cuprum;
-  src: url(../fonts/cuprumbolditalic.woff2) format("woff2"), url(../fonts/cuprumbolditalic.woff) format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: Cuprum;
-  src: url(../fonts/cuprumitalic.woff2) format("woff2"), url(../fonts/cuprumitalic.woff) format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* font-face PT-Sans */
-
-@font-face {
-  font-family: PT-Sans;
-  src: url(../fonts/ptsans.woff2) format("woff2"), url(../fonts/ptsans.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: PT-Sans;
-  src: url(../fonts/ptsansbold.woff2) format("woff2"), url(../fonts/ptsansbold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Variables */
 
 :root {
@@ -60,6 +18,7 @@
   --base-green: #63a63e;
   --base-light-green: #8ed78f;
   --inner-background: #f9f5f0;
+  --base-beige: #f7f3ec;
   --light-pink: #dc91d8;
   --base-gold: #ffd180;
   --base-gold-light: #ffda96;
@@ -147,6 +106,9 @@ h3 {
 .submenu-list {
   text-align: center;
 }
+.submenu-cart {
+  background-color: var(--base-red);
+}
 .submenu-order {
   background-color: var(--base-green);
 }
@@ -164,6 +126,26 @@ h3 {
 .submenu-order:hover,
 .submenu-order:focus {
   background-color: var(--success);
+}
+/*CATALOG HEADER*/
+.personel-name {
+  color: var(--base-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+.personel-links a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--special-dark-blue);
+}
+.personel-links a:hover,
+.personel-links a:focus {
+  color: var(--base-red);
+}
+.personel-links a:active,
+.personel-name:active {
+  color: var(--base-gray-light-dark);
 }
 /* MAIN-HEADER-ABOUT*/
 .header-desc {
@@ -203,6 +185,7 @@ h3 {
 .signin-link:active {
   color: var(--base-gray-light-dark);
 }
+
 /* HEADER-NAV-LIST */
 
 .header-nav-list {
@@ -224,6 +207,102 @@ h3 {
   opacity: 0.5;
 }
 /* MAIN */
+
+/*beardscrumbs*/
+.beardcrumbs {
+}
+.beardcrumbs-list {
+  list-style: none;
+}
+.beardcrumbs-list a {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--base-black);
+}
+
+/*FILTER & Sorting*/
+.filter,
+.sorting {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  color: var(--base-black);
+}
+.filter-sorting {
+  background-color: var(--base-beige);
+}
+.filter-sorting h3,
+.sorting h3 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.cost legend,
+.manufacturers legend,
+.power legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+fieldset {
+  border: none;
+}
+.cost,
+.manufacturers {
+  border-bottom: 1px solid var(--base-gray-double-estra-light);
+}
+.manufacturers-items,
+.power-items {
+  list-style: none;
+}
+.filter label {
+  font-size: 15px;
+  line-height: 19px;
+}
+.filter-item {
+  border: none;
+}
+.range-controls {
+  background-color: var(--base-beige);
+  border-radius: 5px;
+}
+.price-controls input {
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: var(--base-beige);
+}
+
+.sorting {
+  background-color: var(--base-beige);
+}
+.sorting-list {
+  list-style: none;
+}
+.sorting-item {
+  color: var(--base-black);
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--base-red);
+  font-size: 13px;
+  line-height: 18px;
+}
+.sorting-current-item {
+  color: var(--base-red);
+  opacity: 1;
+  border: none;
+}
+.sorting-item:hover,
+.sorting-item:focus {
+  color: var(--base-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--base-red);
+}
+.sorting-item:active {
+  border: none;
+  color: var(--base-red);
+}
 
 /*OFFER-ITEMS*/
 
@@ -281,7 +360,19 @@ h3 {
   line-height: 36px;
   text-transform: uppercase;
 }
+/*Catalog*/
+.catalog-title-bg {
+  background-color: var(--base-gray-light);
+}
 
+.linear-title {
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: var(--special-light-black);
+}
 /*POPULAR-PRODUCTS*/
 .popular-products ul {
   list-style: none;
@@ -304,7 +395,7 @@ h3 {
 }
 
 .product-item {
-  border: 1px solid var(--base-graylight);
+  border: 1px solid var(--base-gray);
   font-family: "PT Sans", "Tahoma", sans-serif;
   color: var(--base-black);
   font-weight: 700;
@@ -317,7 +408,7 @@ h3 {
   line-height: 20px;
 }
 .product-item .price {
-  color: var(--base-graylight);
+  color: var(--base-gray);
   text-decoration-line: line-through;
 }
 .product-item .sale {
@@ -362,7 +453,44 @@ h3 {
   color: var(--special-gray-lightest-opacity);
   border: 3px solid var(--special-gray-lightest-opacity);
 }
+/* CATALOG  PRODUCTS */
+.products-list {
+  list-style: none;
+}
 
+/* CATALOG PAGINATION*/
+.pagination-list {
+  list-style: none;
+}
+.pagination-item {
+  width: 38px;
+  height: 38px;
+  border: solid 1px var(--base-gray);
+  border-radius: 2px;
+  text-align: center;
+}
+.pagination-item a,
+.paginataion-next {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  color: var(--base-black);
+  font-size: 13px;
+  line-height: 18px;
+}
+.pagination-current {
+  background-color: var(--base-red);
+  border: solid 1px var(--base-red);
+}
+.pagination-current a {
+  color: var(--base-white);
+}
+.paginataion-next {
+  display: block;
+  width: 140px;
+  height: 15px;
+  background-color: var(--base-white);
+  border: 1px solid var(--base-gray);
+  text-align: center;
+}
 /*POPULAR-MANUFACTURERS*/
 
 .popular-manufacturers-items {
@@ -381,7 +509,8 @@ h3 {
 }
 
 /* SERVICES*/
-.services {
+.services,
+.inner {
   background: var(--base-gray-light);
 }
 .text {
@@ -453,7 +582,8 @@ h3 {
   color: var(--base-gray-light);
 }
 
-.footer-nav-list .subnav-items {
+.nav-items,
+.subnav-items {
   list-style: none;
 }
 .subnav-items a {
