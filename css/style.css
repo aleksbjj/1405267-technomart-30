@@ -247,9 +247,17 @@ h3 {
 
 /*beardscrumbs*/
 .beardcrumbs {
+  grid-column: 1/-1;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+.beardcrumbs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .beardcrumbs-list {
-  list-style: none;
+  display: flex;
 }
 .beardcrumbs-list a {
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -266,6 +274,11 @@ h3 {
   text-transform: uppercase;
   color: var(--base-black);
 }
+.filter {
+  grid-column: 1/1;
+  grid-row: 3/5;
+}
+
 .filter-sorting {
   background-color: var(--base-beige);
 }
@@ -286,6 +299,13 @@ fieldset {
   border: none;
 }
 .cost,
+.manufacturers,
+.power {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.cost,
 .manufacturers {
   border-bottom: 1px solid var(--base-gray-double-estra-light);
 }
@@ -298,6 +318,8 @@ fieldset {
   line-height: 19px;
 }
 .filter-item {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 .range-controls {
@@ -311,9 +333,19 @@ fieldset {
   font-family: inherit;
   background-color: var(--base-beige);
 }
+.manufacturers {
+  padding-bottom: 19px;
+}
+.power {
+  margin-bottom: 28px;
+}
 
 .sorting {
   background-color: var(--base-beige);
+  padding-top: 9px;
+  padding-left: 19px;
+  grid-column: 2/-1;
+  grid-row: 3/3;
 }
 .sorting-list {
   list-style: none;
@@ -422,7 +454,10 @@ fieldset {
 }
 /*Catalog*/
 .catalog-title-bg {
+  grid-column: 1/-1;
   background-color: var(--base-gray-light);
+  min-height: 89px;
+  margin-bottom: 20px;
 }
 
 .linear-title {
@@ -524,9 +559,28 @@ fieldset {
   color: var(--special-gray-lightest-opacity);
   border: 3px solid var(--special-gray-lightest-opacity);
 }
+
+.catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: min-content min-content 1fr;
+}
 /* CATALOG  PRODUCTS */
-.products-list {
+.products {
+  display: grid;
+  gap: 20px;
+  margin-top: 28px;
+}
+.products ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  column-gap: 18px;
+  row-gap: 20px;
 }
 
 /* CATALOG PAGINATION*/
@@ -745,6 +799,14 @@ fieldset {
   color: var(--base-gold);
   opacity: 0.5;
   text-decoration: none;
+}
+/* ABOUT-PRODUCTS */
+.about-products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 59px;
+  padding-bottom: 68px;
+  padding-top: 64px;
 }
 
 /*FOOTER-INNER*/
