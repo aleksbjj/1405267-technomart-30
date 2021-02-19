@@ -399,14 +399,19 @@ fieldset {
   grid-row: 2/4;
   grid-column: 1/3;
   width: 620px;
-  min-height: 266px;
+  height: 266px;
+  overflow: hidden;
 }
 .slider-item {
   background-color: var(--base-gray);
 }
-.slider-list {
+.slider-items {
   width: 620px;
-  height: 266;
+  height: 266px;
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .slider-item h3 {
@@ -623,6 +628,11 @@ fieldset {
   font-size: 13px;
   line-height: 24px;
 }
+.services-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .services-item {
   grid-row: 3/4;
   grid-column: 1/1;
@@ -715,6 +725,8 @@ fieldset {
 .nav-items,
 .subnav-items {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .subnav-items a {
   color: var(--base-gold);
