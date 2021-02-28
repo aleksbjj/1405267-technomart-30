@@ -35,7 +35,7 @@
             Закладки:0
           </a>
           <a class="submenu-cart" href="#">
-            Корзина:10
+            Корзина:0
           </a>
           <a class="submenu-order" href="#">
             Оформить заказ
@@ -468,19 +468,21 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-writeus">
+  <section class="popup popup-writeus">
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="name-name">Ваше имя:</label><br>
-      <input type="text" class="write-us-name" id="name-name" name="name" placeholder="Имя Фамилия">
-      <p>
-        <label for="email-email">Ваш e-mail:</label><br>
+      <div>
+        <label for="name-name">Ваше имя:</label>
+        <input type="text" class="write-us-name" id="name-name" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="email-email">Ваш e-mail:</label>
         <input type="email" class="write-us-email" id="email-email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="text-text">Текст Письма:</label><br>
+      </div>
+      <div>
+        <label for="text-text">Текст Письма:</label>
         <textarea name="comment" class="write-us-comment" id="comment-field" rows="8" cols="50"
           placeholder="В сваободной форме"></textarea>
-      </p>
+      </div>
       <button class="main-btn" type="submit">Отправить</button>
     </form>
     <div class="send-btn-inner"></div>
