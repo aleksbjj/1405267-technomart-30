@@ -1210,7 +1210,8 @@ h3 {
   position: absolute;
   margin: 0;
   margin-top: 19px;
-  height: 36px;
+  max-height: 36px;
+  overflow: hidden;
   top: 4px;
   left: 23px;
   font-size: 36px;
@@ -1227,6 +1228,8 @@ h3 {
   left: 23px;
   margin: 0;
   margin-bottom: 10px;
+  max-height: 20px;
+  overflow: hidden;
 }
 .slider-item .main-btn {
   position: absolute;
