@@ -40,6 +40,20 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Fonts */
 
 /* font-face Cuprum*/
@@ -955,12 +969,12 @@ img {
   -webkit-appearance: textfield;
   appearance: textfield;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .manufacturers {
   padding-bottom: 18px;
 }
@@ -1400,7 +1414,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 89px;
+  min-height: 89px;
   background-color: var(--inner-background);
 }
 
@@ -1412,8 +1426,6 @@ input::-webkit-inner-spin-button {
   line-height: 30px;
   letter-spacing: -1px;
   color: var(--special-dark-blue);
-  max-height: 32px;
-  overflow: hidden;
 }
 /* title-inner (popular&manufacturers)*/
 .manufacturers-btn,
@@ -2259,12 +2271,12 @@ input::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
   background-color: var(--base-white);
   border-top: solid 7px var(--base-red);
   -webkit-box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
   box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
   margin: auto;
+  display: none;
 }
 .popup-show {
   display: block;
@@ -2283,25 +2295,27 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   width: 460px;
   z-index: 10;
-  margin-top: -5px;
 }
 .write-us-form label {
   display: block;
   width: 220px;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  padding-top: 3px;
   letter-spacing: 0;
   font-size: 18px;
   line-height: 24px;
   color: var(--base-black);
 }
+
 .textarea label {
-  margin-top: -4px;
+  margin-top: -3px;
   margin-bottom: 11px;
 }
 
 .write-us-form input,
-textarea {
+.write-us-form textarea {
   font-family: "PT Sans", "Tahoma", sans-serif;
   border: 2px solid var(--base-gray-light-dark);
   border-radius: 2px;
@@ -2312,16 +2326,15 @@ textarea {
   height: 114px;
   padding-left: 12px;
   border-radius: 2px;
-  margin-bottom: 74px;
-  padding-top: 7px;
+  margin-bottom: 68px;
+  padding-top: 3px;
   resize: none;
 }
 .write-us-form input {
   width: 220px;
   height: 38px;
-  margin-bottom: 15px;
-  padding-left: 11px;
-  margin-top: -5px;
+  margin-bottom: 13px;
+  padding-left: 12px;
 }
 .write-us-form .main-btn {
   width: 460px;
